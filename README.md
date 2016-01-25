@@ -1,6 +1,6 @@
 # Project 1 - *MovieBrowser*
 
-**Name of your app** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+**MovieViewer** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Time spent: **7** hours spent in total
 
