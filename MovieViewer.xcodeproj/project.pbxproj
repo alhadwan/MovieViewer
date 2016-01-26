@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C2C17731C4B80DA00D7E643 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C17721C4B80DA00D7E643 /* MovieCell.swift */; };
+		4C4AA62F1C55FF99003E9641 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AA62E1C55FF99003E9641 /* DetailViewController.swift */; };
 		4C76E4F91C4B513C00A0A0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C76E4F81C4B513C00A0A0ED /* AppDelegate.swift */; };
 		4C76E4FE1C4B513C00A0A0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C76E4FC1C4B513C00A0A0ED /* Main.storyboard */; };
 		4C76E5001C4B513C00A0A0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C76E4FF1C4B513C00A0A0ED /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4C2C17721C4B80DA00D7E643 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		4C4AA62E1C55FF99003E9641 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4C76E4F51C4B513C00A0A0ED /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C76E4F81C4B513C00A0A0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C76E4FD1C4B513C00A0A0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4CEEC2961C5365BB00FAF458 /* MoviesViewController.swift */,
+				4C4AA62E1C55FF99003E9641 /* DetailViewController.swift */,
 			);
 			name = "Veiw controllers";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				4C76E4F91C4B513C00A0A0ED /* AppDelegate.swift in Sources */,
 				4C2C17731C4B80DA00D7E643 /* MovieCell.swift in Sources */,
 				4CEEC2971C5365BB00FAF458 /* MoviesViewController.swift in Sources */,
+				4C4AA62F1C55FF99003E9641 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
