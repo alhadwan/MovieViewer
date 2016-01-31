@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var scrrollView: UIScrollView!
     @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -18,6 +20,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      scrrollView.contentSize = CGSize(width: scrrollView.frame.size.width, height: infoView.frame.origin.y + infoView.frame.size.height)
+        
+        let title = movie!["title"] as? String
+        titleLabel.text = title
+        
+        let overview = movie!["overview"]
+        overviewLabel.text = overview as? String
+        //titleLabel.sizeToFit()
+        overviewLabel.sizeToFit()
+
+        
         
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         
@@ -30,11 +44,7 @@ class DetailViewController: UIViewController {
         }
         
         
-        let title = movie!["title"] as? String
-        titleLabel.text = title
-        let overview = movie!["overview"]
-        overviewLabel.text = overview as? String
-        print(movie)
+                print(movie)
 
         // Do any additional setup after loading the view.
     }

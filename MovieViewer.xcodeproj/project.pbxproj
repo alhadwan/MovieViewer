@@ -75,7 +75,6 @@
 			children = (
 				4C76E50F1C4B760B00A0A0ED /* Veiw controllers */,
 				4C76E50C1C4B756200A0A0ED /* Views */,
-				4C76E4F81C4B513C00A0A0ED /* AppDelegate.swift */,
 				4C76E4FC1C4B513C00A0A0ED /* Main.storyboard */,
 				4C76E4FF1C4B513C00A0A0ED /* Assets.xcassets */,
 				4C76E5011C4B513C00A0A0ED /* LaunchScreen.storyboard */,
@@ -97,6 +96,7 @@
 			children = (
 				4CEEC2961C5365BB00FAF458 /* MoviesViewController.swift */,
 				4C4AA62E1C55FF99003E9641 /* DetailViewController.swift */,
+				4C76E4F81C4B513C00A0A0ED /* AppDelegate.swift */,
 			);
 			name = "Veiw controllers";
 			sourceTree = "<group>";
