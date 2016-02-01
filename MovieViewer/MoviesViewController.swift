@@ -50,6 +50,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         networkRequest()
                 // Do any additional setup after loading the view.
+        
+        switch tabBarController?.selectedIndex{
+        case 0?:
+            navigationItem.title = "Now Playing"
+            
+        case 1?:
+             navigationItem.title = "Top Rated"
+        case 2?:
+            navigationItem.title = "Upcoming"
+        default: break
+        }
+        
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
@@ -82,7 +94,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             delegateQueue: NSOperationQueue.mainQueue()
         )
         
-        BXProgressHUD.showHUDAddedTo(targetView).hide(afterDelay: 3)
+        BXProgressHUD.showHUDAddedTo(targetView).hide(afterDelay: 1)
         
         let task: NSURLSessionDataTask = session.dataTaskWithRequest(request,
             completionHandler: { (dataOrNil, response, error) in

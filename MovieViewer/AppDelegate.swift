@@ -30,8 +30,17 @@ import UIKit
         topRatedNavigationController.tabBarItem.title = "Top Rated"
         topRatedNavigationController.tabBarItem.image = UIImage(named:"top_rated")
         
+        let upcomingNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let upcomingViewController = upcomingNavigationController.topViewController as! MoviesViewController
+        upcomingViewController.endpoint = "upcoming"
+        upcomingNavigationController.tabBarItem.title = "Up coming"
+        upcomingNavigationController.tabBarItem.image = UIImage(named:"upcoming")
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
+        tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController, upcomingNavigationController]
+        
+        tabBarController.tabBar.tintColor = UIColor.whiteColor()
+         tabBarController.tabBar.barTintColor = UIColor.blackColor()
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
